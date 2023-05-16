@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema CRUD</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sistema CRUD</h1>
+
+    <button id="addBtn">Adicionar</button>
+    <form id="addForm" style="display: none;">
+      <h2>Adicionar Registro</h2>
+      <input type="text" id="nameInput" placeholder="Nome" required>
+      <input type="email" id="emailInput" placeholder="Email" required>
+      <button type="submit">Adicionar</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="recordsBody"></tbody>
+    </table>
+  </div>
+</body>
+</html>
+<script src="index.js"></script>
+</body>
+
+</html>
